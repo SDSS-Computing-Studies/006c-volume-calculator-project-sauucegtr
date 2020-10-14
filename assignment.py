@@ -34,6 +34,17 @@ def getParams(shape):
     return prompts
 
 def getInputs(questions):
+    shape=input("Enter shape: ")
+    questions=getParams(shape)
+    numInd=questions.count()
+    print(questions)
+    bra=[]
+    b=0
+    for i in range(0,numInd):
+        num1=float(input("Enter the next dimension: "))
+        meList.insert(i,b)
+        measurements=bra
+
     # Will prompt the user for inputs for the shape they.
     # These will be asked so that the user can enter in appropriate values
     # It will turn all the input data into a list
