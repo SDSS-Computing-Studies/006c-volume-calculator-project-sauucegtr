@@ -10,7 +10,7 @@ def title():
     # Will display a title screen
     # input parameters: none needed
     # output parameters: None
-    # Author:
+    # Author:Jon
     # Modified:
     
     return None
@@ -65,6 +65,8 @@ def getInputs(questions):
     # It will turn all the input data into a list
     # input parameter: list containing the prompts/questions
     # output parameter: return a list containing all the measurements of the shape
+    # Author:Jon
+    # Modified:
     measurements = []
     print(questions)
     
