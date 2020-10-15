@@ -105,17 +105,17 @@ def main():
     # the user chooses to exit
     title()
     instructions()
-    x = ""
+    w = ""
     title()
     instructions()
-    while x != "exit":
-        nshape = getShape()
-        nlist = getParams(nshape)
-        ninputs= getInputs(nlist)
-        answer = calculate(nshape,ninputs)
-        print("The volume of the "+ nshape + " is " + str(answer))
+    while w != "exit":
+        shape = getShape()
+        list = getParams(shape)
+        inputs= getInputs(list)
+        answer = calculate(shape,inputs)
+        print("The volume of the "+ shape + " is " + str(answer))
         
-        x = input("Type 'exit' to stop program ")
+        w = input("Type 'exit' to stop program ")
 
 
 
