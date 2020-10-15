@@ -1,7 +1,7 @@
 #!python3
 # Volume Calculator
 # Feel free to rename your variables
-
+import math
 
 def title():
     print("=================")
@@ -35,7 +35,7 @@ def getParams(shape):
     # output parameter: return a list containing the prompts for each shape:
     # example: ["Enter the radius:","Enter the slant height:","Enter the height:"]
     
-    if shape=="rectangle":
+    if shape=="rectangularprism":
         return["Enter Height","Enter Lenght","Enter Width"]
     elif shape=="shpere":
         return ["enter radius"]
@@ -45,18 +45,44 @@ def getParams(shape):
         return["Enter Height","Enter radius"]
     elif shape=="pyramid":
         return["enter lenght","Enter width", "enter height"]
-    
-   
+
+def volumefindRectangularPrism(measurements):
+    a=measurements[0]
+    b=measurements[1]
+    c=measurements[2]
+    volume=a*b*c
+    return volume
+
+def volumefindSphere(measurements):
+    a=measurements[0]
+    volume= ((a**3)*math.pi)*(4/3)
+    return volume
+
+def volumefindCone(measurements):
+    a=meausrments[0]
+    b=measurements[1]
+    volume=(a/3)*((b**2)*math.pi)
+    return volume
+def volumefindCylander(measurments):
+    a=meausrments[0]
+    b=measurements[1]
+    volume=(b**2)*a*math.pi
+    return volume
+def volumefindPyramid(measuerments):
+    a=meausrments[0]
+    b=measurements[1]
+    c=measurments[2]
+    volume=(a*b*c)/3
+    return volume
+
 
 def getInputs(questions):
-    shape=input("Enter shape: ")
-    questions=getParams(shape)
-    numInd=questions.count()
     print(questions)
+    numInd=questions.count()
     bra=[]
     b=0
     for i in range(0,numInd):
-        num1=float(input("Enter the next dimension: "))
+        num1=float(input(questions[i]))
         meList.insert(i,b)
         measurements=bra
 
@@ -66,7 +92,6 @@ def getInputs(questions):
     # input parameter: list containing the prompts/questions
     # output parameter: return a list containing all the measurements of the shape
     measurements = []
-    print(questions)
     
     
     
