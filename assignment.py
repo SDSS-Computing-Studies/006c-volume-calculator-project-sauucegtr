@@ -109,7 +109,7 @@ def main():
     title()
     instructions()
     while x != "exit":
-        nshape= getShape()
+        nshape = getShape()
         nlist = getParams(nshape)
         ninputs= getInputs(nlist)
         answer = calculate(nshape,ninputs)
