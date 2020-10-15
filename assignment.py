@@ -105,10 +105,19 @@ def main():
     # the user chooses to exit
     title()
     instructions()
-    ans=calc()
-    ans=print("The volume of the " +str(shape)+" you specified is "+ str(ans) +" units cubed." )
-    return ans
-    # ask for a shape
+    x = ""
+    title()
+    instructions()
+    while x != "exit":
+        nshape= getShape()
+        nlist = getParams(nshape)
+        ninputs= getInputs(nlist)
+        answer = calculate(nshape,ninputs)
+        print("The volume of the "+ nshape + " is " + str(answer))
+        
+        x = input("Type 'exit' to stop program ")
+
 
 
 main()
+
