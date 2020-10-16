@@ -113,20 +113,6 @@ def main():
     # the user chooses to exit
     title()
     instructions()
-<<<<<<< Updated upstream
-    w = ""
-    title()
-    instructions()
-    while w != "exit":
-        shape = getShape()
-        list = getParams(shape)
-        inputs= getInputs(list)
-        answer = calculate(shape,inputs)
-        print("The volume of the "+ shape + " is " + str(answer))
-        
-        w = input("Type 'exit' to stop program ")
-
-=======
     shape=input("Enter In what Shape you have here ")
     # ask for a shape
     # get the questions using the shape
@@ -135,7 +121,6 @@ def main():
     
     y=getInputs(x)
     
->>>>>>> Stashed changes
 
     # using shape and measurements decide which calculator to use
     if shape == "rectangularprism":
@@ -170,8 +155,5 @@ def ending():
 
 main()
 
-<<<<<<< Updated upstream
-=======
 
 
->>>>>>> Stashed changes
