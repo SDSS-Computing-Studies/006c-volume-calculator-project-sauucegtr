@@ -1,2 +1,6 @@
 .github/
 test.py
+bash.exe.stackdump
+*.pyc
+__pycache__/assignment.cpython-38.pyc
+bash.exe.stackdump
